@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="XWiki Installer" default="compile">
+    <target name="compile">
+        <pharpackage
+            destfile="xwiki.phar"
+            basedir="src">
+            <fileset dir="src">
+                <include name="**/**"/>
+                <exclude name="composer.json" />
+                <exclude name="composer.phar" />
+                <exclude name="composer.lock" />
+            </fileset>
+            <metadata>
+                <element name="version" value="1.0"/>
+                <element name="authors">
+                    <element name="Alexandru Chelariu"/>
+                </element>
+            </metadata>
+        </pharpackage>
+    </target>
+
+    <target name="clean">
+        <delete file="xwiki.phar" />
+    </target>
+</project>
