@@ -1,0 +1,11 @@
+{
+    "version": {
+        "xe" : {
+            "5.1": "http://download.forge.objectweb.org/xwiki/xwiki-enterprise-jetty-hsqldb-5.1.zip",
+            "4.5.4": "http://download.forge.objectweb.org/xwiki/xwiki-enterprise-jetty-hsqldb-4.5.4.zip"
+        },
+        "xem": {
+
+        }
+    }
+}
