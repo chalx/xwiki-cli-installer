@@ -8,5 +8,6 @@ php:
 before_script:
   - cd src
   - composer install
+  - cd ..
 
 script: phpunit
