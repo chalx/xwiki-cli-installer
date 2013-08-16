@@ -6,7 +6,7 @@ php:
   - 5.5
 
 before_script:
-  - chdir src
+  - cd src
   - composer install
 
 script: phpunit
