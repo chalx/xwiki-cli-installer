@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project name="XWiki Installer" default="compile">
-    <target name="compile">
+<project name="XWiki Installer" default="build">
+    <target name="build">
         <pharpackage
             destfile="xwiki.phar"
             basedir="src">
