@@ -13,7 +13,7 @@ class XWikiVersion {
      */
     public function __construct() {
         $versionFile = dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . "resources" . DIRECTORY_SEPARATOR . "versions.json";
-        if (file_exists($versionFile)) {
+        if (is_readable($versionFile)) {
             $this->versions = json_decode(file_get_contents($versionFile), true);
         } else {
             throw new FileNotFoundException();
