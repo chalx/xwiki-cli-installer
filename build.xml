@@ -25,6 +25,8 @@
     </target>
     
     <target name="phpunit" description="Run unit tests with PHPUnit">
-        <phpunit haltonfailure="true" haltonerror="true" configuration="phpunit.xml" />
+        <phpunit haltonfailure="true" haltonerror="true" configuration="phpunit.xml">
+            <formatter todir="reports" type="xml"/>
+        </phpunit>
     </target>
 </project>
