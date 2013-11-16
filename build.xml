@@ -23,4 +23,8 @@
     <target name="clean">
         <delete file="xwiki.phar" />
     </target>
+    
+    <target name="phpunit" description="Run unit tests with PHPUnit">
+        <exec executable="phpunit" failonerror="true"/>
+    </target>
 </project>
